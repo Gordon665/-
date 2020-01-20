@@ -16,11 +16,11 @@ int main()
         if (mysqlpp::StoreQueryResult res = query.store())
         {
             cout.setf(ios::left);
-            cout << setw(20) << "ID" <<
-                    setw(20) << "Account" <<
-                    setw(20) << "Password" <<
-                    setw(20) << "Name" <<
-                    setw(20) << "Phone" <<
+            cout << setw(21) << "ID" <<
+                    setw(21) << "Account" <<
+                    setw(21) << "Password" <<
+                    setw(21) << "Name" <<
+                    setw(21) << "Phone" <<
                     endl;
             mysqlpp::StoreQueryResult::const_iterator it;
             for (it = res.begin(); it != res.end(); ++it)
